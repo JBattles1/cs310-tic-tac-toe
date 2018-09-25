@@ -1,5 +1,6 @@
 package edu.jsu.mcis;
 
+
 import java.util.Scanner;
 
 public class TicTacToeController {
@@ -35,6 +36,18 @@ public class TicTacToeController {
            error message using view's showInputError() if input is invalid. */
         
         /* INSERT YOUR CODE HERE */
+		
+		int row = keyboard.nextInt();
+		int col = keyboard.nextInt();
+		
+		if((model.isValidSquare(row,col) == true) && (model.isSquareMarked(row,col) == false)) {
+			model.makeMark(row,col);
+        }
+		else {
+            view.showInputError();
+		}
+			
+		
         
     }
 
