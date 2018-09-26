@@ -137,7 +137,9 @@ public class TicTacToeModel {
         
         /* Return true if square at specified location is marked */
         /* INSERT YOUR CODE HERE */
+		
         return !((isValidSquare(row, col) == true) && (grid[row][col] == Mark.EMPTY));
+		
     }
 	
     public Mark getMark(int row, int col) {
@@ -145,13 +147,14 @@ public class TicTacToeModel {
         /* Return mark from the square at the specified location */
         
         /* INSERT YOUR CODE HERE */
+		
+		Mark mark = null;
 
         if(isValidSquare(row, col) == true) {
-			return grid[row][col];
+			mark = grid[row][col];
 		}
-		else {
-            return null;
-        }
+		
+	return mark;
     }
 	
     public Result getResult() {
@@ -164,17 +167,17 @@ public class TicTacToeModel {
 
         if (isMarkWin(Mark.X) == true) {
            return Result.X;
-        }   
+		}
         if(isMarkWin(Mark.O) == true) {
             return Result.O;
-        }
+		}
         else if(isTie() == true) {
             return Result.TIE;
 		}
         else {
             return Result.NONE;
 		}
-
+		
     }
 	
     public boolean isMarkWin(Mark mark) {
@@ -275,16 +278,16 @@ public class TicTacToeModel {
 		
 		for (int i = 0; i <(width); i++) {
 			for(int j = 0; j < width; j++) {
-				if(grid[i][j] != Mark.EMPTY) {
-					counter++;
+				if(grid[i][j] != Mark.EMPTY) { 
+					tie = true;
+				}
+				else {
+					tie = false;
+					break;
 				}
 			}
-			
 		}
 		
-		if(counter == (width * width)) {
-			tie = true;
-		}
 		return tie;
 		
     }
