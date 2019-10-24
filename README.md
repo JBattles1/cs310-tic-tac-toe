@@ -1,6 +1,6 @@
-# cs310-tic-tac-toe
-# Jacksonville State University
 
+# Jacksonville State University
+File: cs310-tic-tac-toe
 # Project Details
 This project was assigned in my CS 310 Software Engineering class. It is an exercise for making a playable version 
 of tic-tac-toe through java in the Command window. The user plays with another player,and each player takes turns choosing a space to occupy a 3x3 grid. 
@@ -10,6 +10,7 @@ results. It was important to keep a check of how many spaces had been occupied s
 The game could also have a GUI created for it to involve practice with implementing interfaces.
 
 # Skills Developed 
-	
+Doing this project allowed me to develop expirence with: 
 	* Arrays
 	* Loops
+	*
