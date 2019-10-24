@@ -1,6 +1,6 @@
-# cs310-tic-tac-toe
-# Jacksonville State University
-# Jacob Battles
+cs310-tic-tac-toe
+Jacksonville State University
+Jacob Battles
 
 # Project Details
 This project is an exercise for making a playable version of tic-tac-toe through java. The user plays with another player,
