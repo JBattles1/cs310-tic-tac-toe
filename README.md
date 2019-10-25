@@ -10,7 +10,7 @@ results. It was important to keep a check of how many spaces had been occupied s
 The game could also have a GUI created for it to involve practice with implementing interfaces.
 
 # Skills Developed 
-Doing this project allowed me to develop expirence with: 
 	* Arrays
 	* Loops
+	* Unit tests
 	
