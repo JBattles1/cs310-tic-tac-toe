@@ -13,4 +13,4 @@ The game could also have a GUI created to implement an interface
 	* Arrays
 	* Loops
 	* Unit tests
-	
+	* Booleans
